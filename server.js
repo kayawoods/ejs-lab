@@ -64,8 +64,8 @@ app.get('/menu', (req, res) => {
 });
 
     app.get('/menu/:category', (req, res) => {
-        const category = req.params.category; // Get category from URL
-        const filteredMenuItems = []; // Create an empty array to store matching items
+        const category = req.params.category; 
+        const filteredMenuItems = []; 
     
         
         for (let i = 0; i < RESTAURANT.menu.length; i++) {
